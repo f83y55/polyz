@@ -69,7 +69,7 @@ def jouer(kmin:int=10, kmax:int=100) :
         ev = int(input(f"Entrer la valeur de P({x}) ici : "))
         p = affiche(retrouve(x, ev))
         print(f"Vous aviez choisi le polynôme :\n{p}")
-        comtinuer = input("Continuer (n: non) ? : ") == 'n'
+        continuer = input("Continuer (n: non) ? : ") != 'n'
 
 
 if __name__ == "__main__":
