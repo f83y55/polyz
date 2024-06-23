@@ -65,7 +65,7 @@ def jouer(kmin:int=10, kmax:int=100) :
     while continuer :
         k = random.randint(kmin, kmax)
         print(f"Choisir un polynôme P à coefficients ENTIERS compris entre {-k} et {k} (inclus)")
-        x = random.randint(k+1, kmax+1)
+        x = random.randint(2*k+1, 2*kmax+1)
         ev = int(input(f"Entrer la valeur de P({x}) ici : "))
         p = affiche(retrouve(x, ev))
         print(f"Vous aviez choisi le polynôme :\n{p}")
